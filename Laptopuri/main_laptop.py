@@ -1,5 +1,5 @@
 import requests
-#from funcs import process_data
+from funcs import process_data
 from funcs_all import unique_col_inserter
 import pandas as pd
 import time
