@@ -1,6 +1,6 @@
 import requests
 from funcs import process_data
-from funcs_all import unique_col_inserter
+from Public.funcs_all import unique_col_inserter
 import pandas as pd
 import time
 from datetime import datetime

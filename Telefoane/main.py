@@ -1,6 +1,6 @@
 import requests
-from funcs import process_data
-from funcs_all import unique_col_inserter
+from Telefoane.funcs import process_data
+from Public.funcs_all import unique_col_inserter
 import pandas as pd
 import time
 from datetime import datetime
@@ -47,7 +47,7 @@ for page in range(1, 100):
         if processed_data is not None:
             data_list.append(processed_data)
     print(f"Done for page {page}")
-    if len(data['data']['items']) != 100:
+    if len(data['data']['items']) < 99:
         break
 columns = ['Titlu', 'Brand', 'Model', 'SIM', 'Storage', 'RAM', 'Internet', 'Color', 'Pret', 'Rating', 'NrRating',
            'URL', 'ScrapedDate']
